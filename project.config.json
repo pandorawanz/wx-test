@@ -1,5 +1,8 @@
 {
-	"description": "项目配置文件",
+	"client":"./by-client",
+  "cloudfunctionRoot":"./by-server",
+  
+  "description": "项目配置文件",
 	"packOptions": {
 		"ignore": []
 	},
@@ -14,7 +17,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.6.5",
 	"appid": "wxe4320e57acfb2678",
-	"projectname": "miniprogram-test-5",
+	"projectname": "by-Applet",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
