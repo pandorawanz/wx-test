@@ -12,8 +12,10 @@ exports.main = async (event, context) => {
 
   var productId = event.productId // The first data
   var productNum = event.productNum // The second data
+
+  /*
   try {
-      await db.collection('item').add({
+      return await db.collection('item').add({
       data: {
         _openid:wxContext.OPENID,
         productId: productId,
@@ -23,4 +25,16 @@ exports.main = async (event, context) => {
   } catch (e) {
     console.log(e)
   }
+  */
+
+  var result = db.collection('item').add({
+    data: {
+      _openid: wxContext.OPENID,
+      productId: productId,
+      productNum: productNum
+    }, success: res => {
+      return res
+    }
+  })
+
 }
